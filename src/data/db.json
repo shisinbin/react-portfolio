@@ -1,0 +1,24 @@
+{
+  "projects": [
+    {
+      "title": "Weather Dashboard",
+      "description_short": "Working with a server-side API to grab weather data, dynamically displaying this in a dashboard",
+      "description_long": "A fuller description of this application, the motivation behind it, what I learned, the challenges I faced, its features, future improvements, etc - basically a summary of what is already included in the README file.",
+      "technologies_used": ["javascript", "css", "jquery", "apis", "momentjs"],
+      "url_deployed": "https://cozy-sprinkles-a45830.netlify.app/",
+      "url_repo": "https://github.com/shisinbin/weather-dashboard",
+      "url_img": "https://raw.githubusercontent.com/shisinbin/weather-dashboard/grid-layout/img/_ss4.png",
+      "id": 1
+    },
+    {
+      "title": "Workday Scheduler",
+      "description_short": "Using jQuery and Moment.js to build a scheduler app",
+      "description_long": "A fuller description of this application, the motivation behind it, what I learned, the challenges I faced, its features, future improvements, etc - basically a summary of what is already included in the README file.",
+      "technologies_used": ["javascript", "html", "css", "jquery", "momentjs"],
+      "url_deployed": "hhttps://hilarious-torte-daaee3.netlify.app/",
+      "url_repo": "https://github.com/shisinbin/workday-scheduler",
+      "url_img": "https://raw.githubusercontent.com/shisinbin/workday-scheduler/main/assets/img/ss2.png",
+      "id": 2
+    }
+  ]
+}
