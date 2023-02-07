@@ -26,11 +26,11 @@ function Projects() {
         </div>
         <div className='carousel-inner'>
           <div className='carousel-item active'>
-            <img
+            {/* <img
               src='https://picsum.photos/414/896'
               className='d-block w-100'
               alt='...'
-            />
+            /> */}
             <div className='carousel-caption'>
               <p className='carousel-date'>December 2022</p>
               <h3>Weather Dashboard</h3>
@@ -45,11 +45,11 @@ function Projects() {
             </div>
           </div>
           <div className='carousel-item'>
-            <img
+            {/* <img
               src='https://picsum.photos/400/600'
               className='d-block w-100'
               alt='...'
-            />
+            /> */}
             <div className='carousel-caption'>
               <h5>Second slide label</h5>
               <p>

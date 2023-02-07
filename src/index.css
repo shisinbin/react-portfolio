@@ -10,6 +10,7 @@
 
 body, html, #root {
   height: 100%;
+  overflow-x: hidden;
 }
 
 html {
@@ -26,6 +27,16 @@ a {
 
 a:hover {
   color: #df5b57;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* fonts */
+h1 {
+  font-size: 2.4rem;
+  /* line-height: 1.2; */
 }
 
 /* base styles */
@@ -61,6 +72,12 @@ header nav a {
 
 header .navbar-toggler-icon {
   color: #fff !important;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
 }
 
 /* main */
@@ -203,6 +220,47 @@ main section h4.trail {
   width: 100%;
   height: 100%;
   background: rgba(0,0,0,0.4);
+}
+
+#projects .carousel-item, #projects .carousel-inner, #projects .carousel-item img {
+    height: 100%;
+}
+
+#projects .carousel-item {
+  background-image: url(https://picsum.photos/2500/1400);
+  background-size: cover;
+  background-position: center;
+}
+
+#projects .carousel-caption {
+  position: absolute;
+  bottom: 15%;
+  left: 15%;
+  right: 15%;
+}
+
+#projects .carousel-indicators {
+  position: absolute;
+  bottom: 5%;
+  text-align: center;
+}
+
+#projects .carousel-caption .carousel-date {
+  margin-bottom: 0.7rem;
+}
+
+#projects .carousel-caption h3 {
+  margin-bottom: 25px;
+  font-size: 2rem;
+}
+
+/* skills */
+#skills ul {
+  padding: 0;
+}
+
+#skills li {
+  grid-column: span 4;
 }
 
 /* footer */
