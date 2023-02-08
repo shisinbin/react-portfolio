@@ -38,13 +38,23 @@ function Header() {
             <div className='offcanvas-body'>
               <ul className='navbar-nav justify-content-end flex-grow-1 pe-3'>
                 <li className='nav-item'>
-                  <a className='nav-link' href='#'>
-                    Home
+                  <a className='nav-link' href='#about'>
+                    About
                   </a>
                 </li>
                 <li className='nav-item'>
-                  <a className='nav-link' href='#'>
-                    Link
+                  <a className='nav-link' href='#projects'>
+                    Projects
+                  </a>
+                </li>
+                <li className='nav-item'>
+                  <a className='nav-link' href='#skills'>
+                    Skills
+                  </a>
+                </li>
+                <li className='nav-item'>
+                  <a className='nav-link' href='#contact'>
+                    Contact
                   </a>
                 </li>
               </ul>
