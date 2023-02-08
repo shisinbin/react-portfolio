@@ -15,10 +15,50 @@
       "description_short": "Using jQuery and Moment.js to build a scheduler app",
       "description_long": "A fuller description of this application, the motivation behind it, what I learned, the challenges I faced, its features, future improvements, etc - basically a summary of what is already included in the README file.",
       "technologies_used": ["javascript", "html", "css", "jquery", "momentjs"],
-      "url_deployed": "hhttps://hilarious-torte-daaee3.netlify.app/",
+      "url_deployed": "https://hilarious-torte-daaee3.netlify.app/",
       "url_repo": "https://github.com/shisinbin/workday-scheduler",
       "url_img": "https://raw.githubusercontent.com/shisinbin/workday-scheduler/main/assets/img/ss2.png",
       "id": 2
+    },
+    {
+      "title": "Team Profile Generator",
+      "description_short": "Node.js app that uses class structures (OOP inheritance) and unit testing (Jest)",
+      "description_long": "A fuller description of this application, the motivation behind it, what I learned, the challenges I faced, its features, future improvements, etc - basically a summary of what is already included in the README file.",
+      "technologies_used": ["javascript", "nodejs", "css", "jquery", "jest"],
+      "url_deployed": "https://github.com/shisinbin/team-profile-generator",
+      "url_repo": "https://github.com/shisinbin/team-profile-generator",
+      "url_img": "https://raw.githubusercontent.com/shisinbin/team-profile-generator/main/img/ss1.png",
+      "id": 3
+    },
+    {
+      "title": "Node Todo App",
+      "description_short": "A Node.js and Inquirer app that uses modularisation and promise chaining a fair bit",
+      "description_long": "A fuller description of this application, the motivation behind it, what I learned, the challenges I faced, its features, future improvements, etc - basically a summary of what is already included in the README file.",
+      "technologies_used": ["javascript", "nodejs", "inquirer"],
+      "url_deployed": "https://github.com/shisinbin/node-todo-app",
+      "url_repo": "https://github.com/shisinbin/node-todo-app",
+      "url_img": "https://raw.githubusercontent.com/shisinbin/node-todo-app/main/img/ss.png",
+      "id": 4
+    },
+    {
+      "title": "Code Quiz",
+      "description_short": "A timed coding quiz with multiple-choice questions. Involves JavaScript, Web APIs, accessing the DOM",
+      "description_long": "A fuller description of this application, the motivation behind it, what I learned, the challenges I faced, its features, future improvements, etc - basically a summary of what is already included in the README file.",
+      "technologies_used": ["javascript"],
+      "url_deployed": "https://inquisitive-druid-fc2233.netlify.app/",
+      "url_repo": "https://github.com/shisinbin/code-quiz",
+      "url_img": "https://raw.githubusercontent.com/shisinbin/code-quiz/main/assets/img/ss1.png",
+      "id": 5
+    },
+    {
+      "title": "Password Generator",
+      "description_short": "Another JavaScript project with a lot of logic involved",
+      "description_long": "A fuller description of this application, the motivation behind it, what I learned, the challenges I faced, its features, future improvements, etc - basically a summary of what is already included in the README file.",
+      "technologies_used": ["javascript"],
+      "url_deployed": "https://stellar-zuccutto-4049a9.netlify.app/",
+      "url_repo": "https://github.com/shisinbin/password-generator",
+      "url_img": "https://raw.githubusercontent.com/shisinbin/password-generator/main/assets/img/ss1.png",
+      "id": 6
     }
   ]
 }

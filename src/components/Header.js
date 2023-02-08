@@ -1,4 +1,16 @@
+import { useState } from 'react';
+
 function Header() {
+  // const [show, setShow] = useState(false);
+
+  // const handleLinkClick = () => {
+  //   setShow(false);
+  // };
+
+  // const handleTogglerClick = () => {
+  //   setShow(true);
+  // };
+
   return (
     <header>
       <nav className='navbar navbar-dark bg-dark fixed-top navbar-expand-md'>
@@ -12,6 +24,7 @@ function Header() {
             data-bs-toggle='offcanvas'
             data-bs-target='#offcanvasNavbar'
             aria-controls='offcanvasNavbar'
+            // onClick={handleTogglerClick}
           >
             <span className='navbar-toggler-icon'></span>
           </button>

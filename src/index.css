@@ -199,7 +199,7 @@ main section h4.trail {
 }
 
 #projects .carousel-caption h3, #projects .carousel-caption p {
-  color: white;
+  color: #eee;
   text-align: left;
   z-index: 1;
   position: relative;
@@ -239,17 +239,23 @@ main section h4.trail {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.4);
+  background: linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.7));
 }
 
 #projects .carousel-item, #projects .carousel-inner, #projects .carousel-item img {
     height: 100%;
 }
 
-#projects .carousel-item {
-  background-image: url(https://picsum.photos/2500/1400);
+#projects .carousel-item img {
+  /* background-image: url(https://picsum.photos/2500/1400);
   background-size: cover;
-  background-position: center;
+  background-position: center; */
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  width: 100%;
 }
 
 #projects .carousel-caption {
@@ -272,6 +278,15 @@ main section h4.trail {
 #projects .carousel-caption h3 {
   margin-bottom: 25px;
   font-size: 2em;
+}
+
+#projects .carousel-inner p a {
+  color: #fff;
+  border-bottom: 1px dashed #fff;
+}
+#projects .carousel-inner p a:hover {
+  color:#128bad;
+  border-bottom: 1px dashed #128bad;
 }
 
 /* skills */

@@ -1,6 +1,7 @@
 import projectData from '../data/db.json';
 
 function Projects() {
+  const projects = projectData.projects;
   return (
     <section id='projects'>
       <div className='projects-header'>
@@ -9,7 +10,19 @@ function Projects() {
       </div>
       <div id='project-carousel' className='carousel slide'>
         <div className='carousel-indicators'>
-          <button
+          {projects.map((project, index) => (
+            <button
+              key={index}
+              type='button'
+              data-bs-target='#project-carousel'
+              data-bs-slide-to={index}
+              aria-label={project.title}
+              aria-current={index === 0 ? 'true' : ''}
+              className={index === 0 ? 'active' : ''}
+            ></button>
+          ))}
+
+          {/* <button
             type='button'
             data-bs-target='#project-carousel'
             data-bs-slide-to='0'
@@ -22,15 +35,53 @@ function Projects() {
             data-bs-target='#project-carousel'
             data-bs-slide-to='1'
             aria-label='Slide 2'
-          ></button>
+          ></button> */}
         </div>
+
         <div className='carousel-inner'>
-          <div className='carousel-item active'>
-            {/* <img
+          {projects.map((project) => (
+            <div
+              className={`carousel-item ${project.id === 1 ? 'active' : ''}`}
+              key={project.id}
+            >
+              <img
+                src={project.url_img}
+                className='d-block w-100'
+                alt='project image'
+              />
+              <div className='carousel-caption'>
+                <p className='carousel-date'>December 2022</p>
+                <h3>{project.title}</h3>
+                <p>{project.description_short}</p>
+                <p className='topics'>
+                  {project.technologies_used.map((tech) => (
+                    <span>{tech}</span>
+                  ))}
+                </p>
+                <p>
+                  <a href={project.url_repo} target='_blank' rel='noreferrer'>
+                    Repo
+                  </a>
+                </p>
+                <p>
+                  <a
+                    href={project.url_deployed}
+                    target='_blank'
+                    rel='noreferrer'
+                  >
+                    Deployed
+                  </a>
+                </p>
+              </div>
+            </div>
+          ))}
+
+          {/* <div className='carousel-item active'>
+            <img
               src='https://picsum.photos/414/896'
               className='d-block w-100'
               alt='...'
-            /> */}
+            />
             <div className='carousel-caption'>
               <p className='carousel-date'>December 2022</p>
               <h3>Weather Dashboard</h3>
@@ -45,19 +96,21 @@ function Projects() {
             </div>
           </div>
           <div className='carousel-item'>
-            {/* <img
+            <img
               src='https://picsum.photos/400/600'
               className='d-block w-100'
               alt='...'
-            /> */}
+            />
             <div className='carousel-caption'>
               <h5>Second slide label</h5>
               <p>
                 Some representative placeholder content for the second slide.
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
+
+        {/* previous button  */}
         <button
           className='carousel-control-prev'
           type='button'
@@ -70,6 +123,8 @@ function Projects() {
           ></span>
           <span className='visually-hidden'>Previous</span>
         </button>
+
+        {/* next button  */}
         <button
           className='carousel-control-next'
           type='button'
@@ -82,6 +137,8 @@ function Projects() {
           ></span>
           <span className='visually-hidden'>Next</span>
         </button>
+
+        {/* overlay thing  */}
         <div className='overlay'></div>
       </div>
     </section>
