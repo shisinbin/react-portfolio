@@ -13,7 +13,7 @@ function CarouselItem({ project }) {
             <span key={i}>{tech}</span>
           ))}
         </p>
-        <p>
+        {/* <p>
           <a href={project.url_repo} target='_blank' rel='noreferrer'>
             Repo
           </a>
@@ -22,7 +22,7 @@ function CarouselItem({ project }) {
           <a href={project.url_deployed} target='_blank' rel='noreferrer'>
             Deployed
           </a>
-        </p>
+        </p> */}
         <p>
           <Link to={`/projects/${project.id}`}>Explore</Link>
         </p>

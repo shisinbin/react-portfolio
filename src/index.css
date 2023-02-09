@@ -281,12 +281,16 @@ main section h4.trail {
 }
 
 #projects .carousel-inner p a {
-  color: #fff;
-  border-bottom: 1px dashed #fff;
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #c593d8;
+  background: none;
+  color: #c593d8;
 }
 #projects .carousel-inner p a:hover {
-  color:#128bad;
-  border-bottom: 1px dashed #128bad;
+  background: #c593d8;
+  color: #eee;
+  border: 2px solid #eee;
 }
 
 /* skills */
@@ -461,12 +465,21 @@ main .project-wrapper {
   margin: 0 auto;
 }
 
+main .project-wrapper img {
+  margin-bottom: 20px;
+}
+
 main .project-wrapper button {
   display: inline-block;
   padding: 10px 20px;
   border: 2px solid #128bad;
   background: none;
   color: #128bad;
+}
+main .project-wrapper button:hover {
+  background: #128bad;
+  border: 2px solid #eee;
+  color: #eee;
 }
 
 main .project-wrapper a {

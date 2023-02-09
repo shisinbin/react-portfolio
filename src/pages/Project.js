@@ -1,5 +1,6 @@
 import { useNavigate, useParams } from 'react-router-dom';
 import projectData from '../data/db.json';
+import workInProgress from '../assets/images/work-in-progress.png';
 
 function Project() {
   const { id } = useParams();
@@ -11,6 +12,7 @@ function Project() {
   return (
     <main>
       <div className='project-wrapper'>
+        <img src={workInProgress} width='100' height='100' />
         <h2>{project.title}</h2>
         <p>
           <a href={project.url_repo} target='_blank' rel='noreferrer'>
@@ -23,7 +25,6 @@ function Project() {
           </a>
         </p>
         <p>{project.description_long}</p>
-        <p>So here, I'll include screenshots too.</p>
         <button onClick={() => navigate('/#projects')}>Back</button>
       </div>
     </main>
