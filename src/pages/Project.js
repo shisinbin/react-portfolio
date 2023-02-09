@@ -1,6 +1,7 @@
 import { useNavigate, useParams } from 'react-router-dom';
 import projectData from '../data/db.json';
 import workInProgress from '../assets/images/work-in-progress.png';
+import { useEffect } from 'react';
 
 function Project() {
   const { id } = useParams();
@@ -8,6 +9,15 @@ function Project() {
   const project = projectData.projects.find(
     (project) => project.id === Number(id)
   );
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth',
+    });
+    document.body.scrollTop = 0;
+  });
 
   return (
     <main>
