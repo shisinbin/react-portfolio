@@ -3,8 +3,11 @@ function Contact() {
     <section id='contact'>
       <div className='contact-content'>
         <h4 className='trail'>Contact</h4>
-        <h2>Need some help?</h2>
-        <p>Tell me what you want, and I'll build it. Well, I can try.</p>
+        <h2>Let's Connect!</h2>
+        <p>
+          Whether you need a hand with a project or just want to say hi, I'm
+          here. Shoot me a message and let's chat!
+        </p>
         <a href='mailto:sb1664@gmail.com'>
           <i className='far fa-envelope'></i> sb1664@gmail.com
         </a>

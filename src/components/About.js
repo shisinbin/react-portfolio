@@ -8,11 +8,12 @@ function About() {
         <h4 className='trail'>About</h4>
         <h2>Web Developer</h2>
         <p>
-          Hi, I'm Shiv, that's my name. Don't wear it out. I design web sites,
-          or try to. I'm not too hot on the design element. I don't have any
-          illustrating skills and already I can see how that's going to put me
-          at a disadvantage. But I'm good at logic, so maybe there's a spot for
-          me somewhere here.
+          Hi there! My name is Shiv and I'm a web developer on a mission. While
+          I may not have a background in design, I've got a passion for solving
+          problems with code and making beautiful, functional websites. I know I
+          still have a lot to learn, but I'm excited to continue growing and
+          finding my place in the world of web development. So, let's see what I
+          can do!
         </p>
       </div>
     </section>
