@@ -2,10 +2,10 @@ import projectData from '../data/db.json';
 import CarouselIndicator from './CarouselIndicator';
 import CarouselItem from './CarouselItem';
 
-function Projects({ projectsRef }) {
+function Projects() {
   const projects = projectData.projects;
   return (
-    <section id='projects' ref={projectsRef}>
+    <section id='projects'>
       <div className='projects-header'>
         <h4 className='trail'>Projects</h4>
         <h2>Adventures in Web Development</h2>
@@ -14,7 +14,7 @@ function Projects({ projectsRef }) {
         <div className='carousel-indicators'>
           {projects.map((project, index) => (
             <CarouselIndicator
-              id={Number(project.id)}
+              key={project.id}
               title={project.title}
               index={index}
             />
@@ -23,7 +23,7 @@ function Projects({ projectsRef }) {
 
         <div className='carousel-inner'>
           {projects.map((project) => (
-            <CarouselItem project={project} />
+            <CarouselItem key={project.id} project={project} />
           ))}
         </div>
 

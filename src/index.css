@@ -458,6 +458,7 @@ main .project-wrapper {
   max-width: 600px;
   text-align: center;
   padding: 100px 3%;
+  margin: 0 auto;
 }
 
 main .project-wrapper button {
@@ -466,6 +467,13 @@ main .project-wrapper button {
   border: 2px solid #128bad;
   background: none;
   color: #128bad;
+}
+
+main .project-wrapper a {
+  border-bottom: 1px dashed #333;
+}
+main .project-wrapper a:hover {
+  border-bottom: 1px dashed #128bad;
 }
 
 

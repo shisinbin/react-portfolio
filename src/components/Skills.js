@@ -3,9 +3,9 @@ import bootstrapLogo from '../assets/images/bootstrap-logo.svg';
 import cssLogo from '../assets/images/css-logo.svg';
 import jsLogo from '../assets/images/js-logo.svg';
 
-function Skills({ skillsRef }) {
+function Skills() {
   return (
-    <section id='skills' ref={skillsRef}>
+    <section id='skills'>
       <div className='skills-header'>
         <h4 className='trail'>Skills</h4>
         <h2>Things I Can Do</h2>

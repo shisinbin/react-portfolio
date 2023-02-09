@@ -1,7 +1,6 @@
-function CarouselIndicator({ id, title, index }) {
+function CarouselIndicator({ title, index }) {
   return (
     <button
-      key={id}
       type='button'
       data-bs-target='#project-carousel'
       data-bs-slide-to={index}
