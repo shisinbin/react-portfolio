@@ -294,6 +294,7 @@ main section h4.trail {
   background: #c593d8;
   color: #eee;
   border: 2px solid #eee;
+  text-shadow: none;
 }
 
 /* skills */
@@ -342,7 +343,7 @@ main section h4.trail {
 #contact {
   background: #333;
   padding-top: 80px;
-  padding-bottom: 20px;
+  padding-bottom: 60px;
   text-align: center;
 }
 
@@ -365,17 +366,20 @@ main section h4.trail {
 }
 
 #contact form {
-  width: 80%;
+  /* width: 100%; */
   max-width: 400px;
-  margin: 0 auto 40px;
+  margin: 0 auto;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
-#contact input, #contact textarea {
-  width: 90%;
-  margin: 10px 0;
-  padding: 10px 16px;
+
+#contact form > * {
+  margin-bottom: 10px;
+  padding: 7px 12px;
   border-radius: 3px;
-  border: 1px solid #015b75;
+  width: 100%;
+  outline: none;
 }
 
 #contact button {
@@ -384,6 +388,7 @@ main section h4.trail {
   border: 2px solid #128bad;
   background: none;
   color: #128bad;
+  width: auto;
   /* border-radius: 5px; */
 }
 #contact button i {
