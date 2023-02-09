@@ -19,6 +19,7 @@ html {
 
 body {
   font-family: 'Roboto', sans-serif;
+  background: #f8f8f8;
 }
 
 a {
@@ -189,13 +190,13 @@ main section h4.trail {
   text-align: center;
 }
 
-#projects .projects-header h2 {
-  margin-bottom: 25px;
-}
-
 #project-carousel {
   height: 100vh;
   position: relative;
+}
+
+#projects .projects-header h2 {
+  margin-bottom: 25px;
 }
 
 #projects .carousel-caption h3, #projects .carousel-caption p {
@@ -203,6 +204,7 @@ main section h4.trail {
   text-align: left;
   z-index: 1;
   position: relative;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 }
 
 #projects .carousel-caption .topics span {
@@ -286,6 +288,7 @@ main section h4.trail {
   border: 2px solid #c593d8;
   background: none;
   color: #c593d8;
+  margin-top: 10px;
 }
 #projects .carousel-inner p a:hover {
   background: #c593d8;
