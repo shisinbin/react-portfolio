@@ -1,9 +1,9 @@
 import aboutImage from '../assets/images/ab1.jpg';
 
-function About() {
+function About({ aboutRef }) {
   return (
-    <section id='about'>
-      <img src={aboutImage} alt='about image' />
+    <section id='about' ref={aboutRef}>
+      <img src={aboutImage} alt='about' />
       <div className='about-content'>
         <h4 className='trail'>About</h4>
         <h2>Web Developer</h2>

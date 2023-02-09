@@ -1,23 +1,20 @@
-import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Header() {
-  // const [show, setShow] = useState(false);
-
-  // const handleLinkClick = () => {
-  //   setShow(false);
-  // };
-
-  // const handleTogglerClick = () => {
-  //   setShow(true);
-  // };
+  const handleScroll = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <header>
       <nav className='navbar navbar-dark bg-dark fixed-top navbar-expand-md'>
         <div className='container-fluid'>
-          <a className='navbar-brand' href='#'>
+          <Link className='navbar-brand' to='/'>
             SSB
-          </a>
+          </Link>
           <button
             className='navbar-toggler'
             type='button'
@@ -51,24 +48,40 @@ function Header() {
             <div className='offcanvas-body'>
               <ul className='navbar-nav justify-content-end flex-grow-1 pe-3'>
                 <li className='nav-item'>
-                  <a className='nav-link' href='#about'>
+                  <Link
+                    className='nav-link'
+                    to='/#about'
+                    onClick={() => handleScroll('about')}
+                  >
                     About
-                  </a>
+                  </Link>
                 </li>
                 <li className='nav-item'>
-                  <a className='nav-link' href='#projects'>
+                  <Link
+                    className='nav-link'
+                    to='/#projects'
+                    onClick={() => handleScroll('projects')}
+                  >
                     Projects
-                  </a>
+                  </Link>
                 </li>
                 <li className='nav-item'>
-                  <a className='nav-link' href='#skills'>
+                  <Link
+                    className='nav-link'
+                    to='/#skills'
+                    onClick={() => handleScroll('skills')}
+                  >
                     Skills
-                  </a>
+                  </Link>
                 </li>
                 <li className='nav-item'>
-                  <a className='nav-link' href='#contact'>
+                  <Link
+                    className='nav-link'
+                    to='/#contact'
+                    onClick={() => handleScroll('contact')}
+                  >
                     Contact
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

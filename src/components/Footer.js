@@ -1,13 +1,33 @@
+import { Link } from 'react-router-dom';
+
 function Footer() {
+  const handleScroll = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <footer>
       <div className='wrapper'>
         <hr />
         <nav>
-          <a href='#about'>About</a>
-          <a href='#projects'>Work</a>
+          <Link to='/#about' onClick={() => handleScroll('about')}>
+            About
+          </Link>
+          <Link to='/#projects' onClick={() => handleScroll('projects')}>
+            Work
+          </Link>
+          <Link to='/#contact' onClick={() => handleScroll('contact')}>
+            Contact
+          </Link>
+          <Link to='/#source-code' onClick={() => handleScroll('source-code')}>
+            Source code
+          </Link>
+          {/* <a href='#projects'>Work</a>
           <a href='#contact'>Contact</a>
-          <a href='#source-code'>Source Code</a>
+          <a href='#source-code'>Source Code</a> */}
         </nav>
         <hr />
         <div className='links'>

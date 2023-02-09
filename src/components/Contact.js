@@ -1,6 +1,6 @@
-function Contact() {
+function Contact({ contactRef }) {
   return (
-    <section id='contact'>
+    <section id='contact' ref={contactRef}>
       <div className='contact-content'>
         <h4 className='trail'>Contact</h4>
         <h2>Need some help?</h2>

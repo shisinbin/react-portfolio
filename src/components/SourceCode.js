@@ -1,6 +1,6 @@
-function SourceCode() {
+function SourceCode({ sourceCodeRef }) {
   return (
-    <section id='source-code'>
+    <section id='source-code' ref={sourceCodeRef}>
       <div className='source-code-content'>
         <h4 className='trail'>Source Code</h4>
         <h2>Get inside my mind</h2>

@@ -239,7 +239,7 @@ main section h4.trail {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.7));
+  background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.8));
 }
 
 #projects .carousel-item, #projects .carousel-inner, #projects .carousel-item img {
@@ -451,6 +451,21 @@ footer hr {
 
 footer p {
   color: #eee;
+}
+
+/* project page  */
+main .project-wrapper {
+  max-width: 600px;
+  text-align: center;
+  padding: 100px 3%;
+}
+
+main .project-wrapper button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #128bad;
+  background: none;
+  color: #128bad;
 }
 
 
