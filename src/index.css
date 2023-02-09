@@ -106,13 +106,16 @@ main section h4.trail {
 
 #hero {
   height: 100vh;
-  background-image: url(./assets/images/bg1.png);
-  /* background-repeat: no-repeat;
-  background-position: center; */
+  background-image: url(./assets/images/tron-effect.webp);
+  background-color: #015b75;
+  background-size:105% 105%;
+  background-repeat: no-repeat;
+  opacity: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  width:100%;
 }
 
 #hero .hero-content {
@@ -130,6 +133,7 @@ main section h4.trail {
   border: 2px solid white;
   background: none;
   color: white;
+  margin-top: 1em;
   /* border-radius: 5px; */
 }
 

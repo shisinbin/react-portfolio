@@ -9,7 +9,11 @@ function Hero() {
   return (
     <section id='hero'>
       <div className='hero-content'>
-        <h1>Web Development, one step at a time</h1>
+        <h1>
+          Web Development,
+          <br />
+          one step at a time
+        </h1>
         <button onClick={handleScrollToProjects}>Explore my work</button>
       </div>
       <div className='hero-arrow'>

@@ -62,9 +62,9 @@ function Contact() {
           to collaborate on a project, or just want to say hi, I'd love to hear
           from you. Fill out the form below and let's start a conversation.
         </p>
-        <a href='mailto:sb1664@gmail.com'>
+        {/* <a href='mailto:sb1664@gmail.com'>
           <i className='far fa-envelope'></i> sb1664@gmail.com
-        </a>
+        </a> */}
       </div>
 
       <form onSubmit={handleSubmit}>
