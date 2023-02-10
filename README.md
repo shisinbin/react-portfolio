@@ -2,17 +2,23 @@
 
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 
+<p style="text-align:left">
+<img width="80%" src="ss.png" alt="screenshot of landing page">
+</p>
+
 ## Description
 
-Another portfolio. But this time done using React.
+A portfolio web application made using the JavaScript library [React](https://reactjs.org/).
 
-## Getting started
+## Getting Started
 
 To view the deployed portfolio, click on the link below:
 
 <a href="https://shisinbin.github.io/react-portfolio/" target="_blank" rel="noreferrer">https://shisinbin.github.io/react-portfolio/</a>
 
-A lot more to come, but while you're waiting why not have a read through of Create-React-App's awesome README file???
+More information to come? Possibly. The contact form functionality is pretty neat and probably worth explaining some.
+
+While you're waiting, why not have a read through of Create-React-App's awesome README file???
 
 # Getting Started with Create React App
 

@@ -1,25 +1,30 @@
+import { Link } from 'react-router-dom';
+
+import profileImage from '../assets/images/profile.png';
+
 function Hero() {
-  const handleScrollToProjects = () => {
-    const element = document.getElementById('projects');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+  const handleClick = () => {
+    console.log('button clicked!');
   };
 
   return (
-    <section id='hero'>
+    <main id='hero'>
       <div className='hero-content'>
+        {/* <img src={profileImage} alt='profile' /> */}
+        <div className='profile-picture'></div>
         <h1>
-          Web Development,
+          Shivraj Binepal
           <br />
-          one step at a time
+          Web Developer
         </h1>
-        <button onClick={handleScrollToProjects}>Explore my work</button>
+        <h4>
+          Building better online experiences
+          <br />
+          through clean and functional design
+        </h4>
+        <Link to='/projects'>Explore my work</Link>
       </div>
-      <div className='hero-arrow'>
-        <i className='fas fa-arrow-down'></i>
-      </div>
-    </section>
+    </main>
   );
 }
 

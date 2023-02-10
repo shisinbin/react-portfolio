@@ -20,7 +20,7 @@ function Project() {
   });
 
   return (
-    <main>
+    <main id='project'>
       <div className='project-wrapper'>
         <img src={workInProgress} width='100' height='100' />
         <h2>{project.title}</h2>
@@ -35,7 +35,7 @@ function Project() {
           </a>
         </p>
         <p>{project.description_long}</p>
-        <button onClick={() => navigate('/#projects')}>Back</button>
+        <button onClick={() => navigate(-1)}>Back</button>
       </div>
     </main>
   );

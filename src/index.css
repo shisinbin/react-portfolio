@@ -53,36 +53,49 @@ main {
 }
 
 /* mobile styles */
-/* for now, just focus on basics */
 
 /* header */
-
-header nav {
-  padding: 9px 3%;
-  /* background-color: rgba(0, 0, 0, 0.7) !important; */
+header {
+  background: #333;
 }
 
-header h2 {
-  color: #fff;
+header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 3%;
+  margin: 0 auto;
+  max-width: 1400px;
 }
 
-header nav a {
-  color: #fff !important;
+header .wrapper h4 {
+  margin: 0;
+}
+
+header .wrapper h4 a {
+  color: #e3e3e3;
+}
+
+header .wrapper nav {
+  display: flex;
+  gap: 14px;
   text-transform: uppercase;
-  font-size: 0.9em;
-}
-header nav a:hover {
-  color: #128bad !important;
 }
 
-header .navbar-toggler-icon {
-  color: #fff !important;
+header .wrapper nav a {
+  color: #e3e3e3;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  gap: 10px;
+header .wrapper a:hover {
+  color: #128bad;
+}
+
+header .wrapper a.active {
+  color: #128bad;
+}
+
+header .wrapper a.active:hover {
+  cursor:default;
 }
 
 /* main */
@@ -90,36 +103,52 @@ header .navbar-toggler-icon {
 main {
   display: flex;
   flex-direction: column;
-  /* gap: 20px; */
 }
 
-main section h4.trail {
+main h4.trail {
   text-transform: uppercase;
   font-size: 0.9em;
-  color: #015b75;
+  color: #128bad;
   font-weight: bold;
   margin-bottom: 15px;
 }
 
 /* sections */
-/* hero */
 
+/* hero */
 #hero {
-  height: 100vh;
+  /* height: 100vh; */
   background-image: url(./assets/images/tron-effect.webp);
   background-color: #015b75;
   background-size:105% 105%;
   background-repeat: no-repeat;
-  opacity: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
   width:100%;
 }
 
 #hero .hero-content {
   text-align: center;
+}
+
+/* #hero .hero-content img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 20px;
+} */
+
+#hero .profile-picture {
+  width: 150px;
+  height: 150px;
+  background-color: #015b75;
+  background-image: url('./assets/images/profile.png');
+  background-size: 100%;
+  background-blend-mode: screen;
+  margin: 15px auto;
+  border-radius: 50%;
 }
 
 #hero .hero-content h1 {
@@ -128,40 +157,29 @@ main section h4.trail {
   text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 }
 
-#hero .hero-content button {
+#hero .hero-content h4 {
+  color: #d2d2d2;
+  font-weight: lighter;
+}
+
+#hero .hero-content a {
   display: inline-block;
   padding: 10px 20px;
-  border: 2px solid white;
+  border: 2px solid #d2d2d2;
   background: none;
-  color: white;
-  margin-top: 1em;
+  color: #d2d2d2;
+  margin-top: 1.4em;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
-  /* border-radius: 5px; */
-}
-
-#hero .hero-arrow {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translate(-50%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 50px;
-  width: 50px;
-}
-
-#hero .hero-arrow i {
-  font-size: 30px;
-  color: white;
 }
 
 /* about */
 #about {
   display: flex;
   flex-direction: column;
-  background: #333;
+  background: #4a4a4a;
   width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 #about .about-content h2, #about .about-content p, #about .about-content a, #about .about-content i {
   color: #e3e3e3;
@@ -171,42 +189,41 @@ main section h4.trail {
   color: #128bad;
 }
 
-#about img {
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
-  object-position: center;
-  height: 100%;
-  width: 100%;
-}
 #about .about-content {
-  padding: 80px 5%;
+  padding: 0 5%;
   line-height: 1.6;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0 auto;
 }
+
 #about .about-content h2 {
   margin-bottom: 25px;
 }
 
 /* projects */
 #projects {
-  padding-top: 80px;
+  height: 100%;
+  background: #4a4a4a;
   text-align: center;
 }
 
-#project-carousel {
-  height: 100vh;
-  position: relative;
+#projects .projects-header {
+  margin: 20px 3% 12px;
 }
 
 #projects .projects-header h2 {
-  margin-bottom: 25px;
+  color: #e3e3e3;
+}
+
+#project-carousel {
+  height: 100%;
+  position: relative;
 }
 
 #projects .carousel-caption h3, #projects .carousel-caption p {
-  color: #eee;
+  color: #e3e3e3;
   text-align: left;
   z-index: 1;
   position: relative;
@@ -258,12 +275,8 @@ main section h4.trail {
   /* background-image: url(https://picsum.photos/2500/1400);
   background-size: cover;
   background-position: center; */
-  max-width: 100%;
-  height: auto;
   object-fit: cover;
   object-position: center;
-  height: 100%;
-  width: 100%;
 }
 
 #projects .carousel-caption {
@@ -296,15 +309,17 @@ main section h4.trail {
   color: #c593d8;
   margin-top: 10px;
 }
+
+
 #projects .carousel-inner p a:hover {
-  background: #c593d8;
-  color: #eee;
-  border: 2px solid #eee;
+  background: #3c3c3c;
+  color: #c593d8;
+  border: 2px solid #c593d8;
   text-shadow: none;
 }
 
 /* skills */
-#skills {
+/* #skills {
   padding-top: 80px;
   max-width: 1400px;
   margin: 0 auto;
@@ -343,18 +358,20 @@ main section h4.trail {
 
 #skills li {
   grid-column: span 4;
-}
+} */
 
 /* contact */
 #contact {
-  background: #333;
-  padding-top: 80px;
-  padding-bottom: 60px;
+  background: #4a4a4a;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
 }
 
 #contact .contact-content {
-  padding: 0 5% 30px;
+  padding: 0 5%;
   max-width: 700px;
   margin: 0 auto;
 }
@@ -372,7 +389,7 @@ main section h4.trail {
 }
 
 #contact form {
-  /* width: 100%; */
+  width: 100%;
   max-width: 360px;
   margin: 0 auto;
   text-align: center;
@@ -388,21 +405,28 @@ main section h4.trail {
   outline: none;
 }
 
-#contact button {
+#contact .form-container {
+  margin-top: 10px;
+}
+
+#contact .form-container button {
   display: inline-block;
   padding: 10px 20px;
   border: 2px solid #128bad;
   background: none;
   color: #128bad;
   width: auto;
-  /* border-radius: 5px; */
 }
-#contact button i {
+#contact .form-container button i {
   color: #128bad;
 }
 
+#contact .form-container button:hover {
+  background: #363636;
+}
+
 /* source code */
-#source-code {
+/* #source-code {
   max-width: 1400px;
   margin: 0 auto;
   padding-top: 80px;
@@ -422,86 +446,70 @@ main section h4.trail {
   border: 2px solid #015b75;
   background: none;
   color: #015b75;
-  /* border-radius: 5px; */
-}
+} */
 
 /* footer */
 
 footer {
   background: #333;
   text-align: center;
-  padding: 75px 3% 35px;
+  padding: 12px 3% 17px;
+  z-index: 1;
 }
 
-footer .wrapper {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-footer nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 30px 5% 30px;
-}
-footer nav a {
-  color: #eee;
-  text-transform: uppercase;
-  font-size: 0.9em;
-}
-
-footer .links {
+footer .outward-links {
   display: flex;
   justify-content: center;
   gap: 30px;
-  padding: 30px;
+  padding: 10px 30px 15px;
 }
 
-footer .links i {
-  color: #eee;
-  font-size: 1.5em;
+footer .outward-links i {
+  color: #e3e3e3;
+  font-size: 1.3em;
 }
 
-footer .links i:hover {
+footer .outward-links i:hover {
   color: #128bad;
 }
 
-footer hr {
-  color: #888;
-}
-
 footer p {
-  color: #eee;
+  color: #e3e3e3;
 }
 
 /* project page  */
-main .project-wrapper {
+#project {
+  background: #e3e3e3;
+}
+
+#project .project-wrapper {
   max-width: 600px;
   text-align: center;
   padding: 100px 3%;
   margin: 0 auto;
 }
 
-main .project-wrapper img {
+#project .project-wrapper img {
   margin-bottom: 20px;
 }
 
-main .project-wrapper button {
+#project .project-wrapper button {
   display: inline-block;
   padding: 10px 20px;
   border: 2px solid #128bad;
   background: none;
   color: #128bad;
 }
-main .project-wrapper button:hover {
+#project .project-wrapper button:hover {
   background: #128bad;
-  border: 2px solid #eee;
-  color: #eee;
+  border: 2px solid #e3e3e3;
+  color: #e3e3e3;
 }
 
-main .project-wrapper a {
+#project .project-wrapper a {
   border-bottom: 1px dashed #333;
 }
-main .project-wrapper a:hover {
+#project .project-wrapper a:hover {
   border-bottom: 1px dashed #128bad;
 }
 
@@ -517,18 +525,6 @@ main .project-wrapper a:hover {
 
 @media screen and (min-width: 768px) {
 
-  #about {
-    flex-direction: row;
-  }
-  #about img {
-    flex: 1;
-    width: 50%;
-  }
-  #about .about-content {
-    flex:1;
-    flex-basis: 60%;
-  }
-
   #skills li {
     grid-column: span 2;
   }
@@ -541,6 +537,10 @@ main .project-wrapper a:hover {
   body{
     font-size: 20px;
   }
+
+  #about .about-content {
+    max-width: 900px;
+  };
 
 }
 
